@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    text-decoration: none;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    margin-top: 50px;
+    top: 0;
+   
+    
+    
+}
+
+ul{
+display: flex;
+margin: 20px;
+justify-content:flex-end ;
+list-style: none;
+
+}
+ul li {
+    margin: 0 0 10px 20px;
+    font-size: 30px;
+    
+}
+ul li a{
+    color: rgb(238, 230, 230);
+    font-family: 'Italianno', cursive;
+    text-decoration: none;
+    display: block;
+}
+ul li a:hover {
+    background-color: rgb(193, 155, 85);
+    color: black;
+    border-radius: 25px;
+}
+
+.header{
+    background-image: url(/img/cover\ 1.webp);
+    background-size: cover;
+    height: 500px;
+    padding-top: 50px;
+    width: 100%;
+    animation-name: change;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    background-repeat: no-repeat;
+}
+.button{
+    display: flex;
+    padding-left: 80px;
+    margin-top: 15px;
+    background-color: rgb(138, 138, 210);
+    font-family: 'Italianno', cursive;
+   
+}
+
+.btn{
+    font-size: 30px;
+    margin: 8px 0 8px 40px;
+    color: black;
+    width: 200px;
+    text-align: center;
+    border: 4px solid black;
+    border-radius: 20px;
+    position: sticky;
+    top: 0;
+    font-family: 'Italianno', cursive;
+    
+}
+.btn:hover{
+    border-color: #424efa;
+    background-color: lightgrey;
+}
+
+h3{
+    font-size: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: coral;
+    
+}
+h3:hover{
+    background-color: blue;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    /*background-image: url(/img/Cover\ 2.jpeg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightgray;
+    
+    
+}
+.item{
+    width: 400px;
+    height: 300px;
+    margin: 20px 10px 5px 5px;
+    
+}
+img {
+    width: 300px;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+   
+    border-radius: 30px;
+  }
+  
+  
+  img:hover {
+    transform: scale(1.2);
+    
+  }
+
+  @keyframes change {
+    
+    0%{
+        background-image: url(/img/Cover\ 2.jpeg);
+        height: 500px;
+        width: 100%;
+
+    }
+    30%{
+        background-image: url(/img/Cover\ 3.jpeg);
+        height: 500px;
+        width: 100%;
+    }
+    
+  }
+  
+  @media(max-width:600px){
+    
+  }
